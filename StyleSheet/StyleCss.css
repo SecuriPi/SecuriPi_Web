@@ -1,0 +1,58 @@
+@CHARSET "UTF-8";
+
+@font-face {
+    font-family: "AltaHaas";
+    src: url('../System/Font/AlteHaasGroteskRegular.ttf');
+}
+@font-face {
+    font-family: "AltaHaasBold";
+    font-weight: bold;
+    src: url('../System/Font/AlteHaasGroteskBold.ttf');
+}
+
+body {
+	background: url('../System/Images/wallpaper.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	
+	font-family: AltaHaas, 'Open Sans', sans-serif;
+	
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2.5em;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#Contenu {
+	width: 80%;
+	font-size: 1.05em;
+	border-radius: 10px;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.infos {
+	text-align: left;
+	position: absolute;
+	top: 564px;
+	font-size: 0.8em;
+}
