@@ -11,7 +11,7 @@
 <?php
 include 'var_connexion.php';
 
-$bdd_connexion = new PDO('mysql:host='.$hostname.';dbname='.$database.'', $username, $password);
+$bdd_connexion = new PDO('mysql:host='.$hostname.';dbname='.$database, $username, $password);
 $clients = $bdd_connexion->query('SELECT * FROM Clients');
 
 $connect = false;
