@@ -1,3 +1,13 @@
+<?php/**
+ * \file          Scripts.php
+ * \author    S&eacute;curiPi
+ * \version   1.0
+ * \brief       Script de d&eacute;connexion
+ *
+ * \details    Ce fichier permet de renvoyer vers le fichier de d&eacute;connexion
+ *             au moment du click sur le bouton \e deconnexion.
+ */
+?>
 <script type="text/javascript">
 	/**
 	 * Detecte les cliques de l'intrface pour naviguer par le menu
@@ -26,7 +36,7 @@
 	}
 
 	/**
-	 * AJAX - Mise Ã  jour du compte 'utilisateur'
+	 * AJAX - Mise à jour du compte 'utilisateur'
 	 * @param {String} login
 	 * @param {String} password
 	 * @param {String} confirm
@@ -39,16 +49,16 @@
 			if(xmlHttp.readyState == 4) {
 				switch (xmlHttp.responseText) {
 					case 'login:empty':
-					addMessage("L' 'Identifiant' ne peux pas Ãªtre vide !");
+					addMessage("L' 'Identifiant' ne peux pas être vide !");
 					break;
 					case 'mdp:empty':
-					addMessage("Le 'Mot de passe' ne peux pas Ãªtre vide !");
+					addMessage("Le 'Mot de passe' ne peux pas être vide !");
 					break;
 					case 'err:confirm':
-					addMessage("Les mots de passes sont diffÃ©rents !");
+					addMessage("Les mots de passes sont différents !");
 					break;
 					default:
-					document.getElementById("message").innerHTML = "Le compte Ã  Ã©tÃ© modifiÃ© !";
+					document.getElementById("message").innerHTML = "Le compte à été modifié !";
 					document.getElementById("message").style.display = "block";
 					setTimeout(function(){ returnBack(); }, 2500);
 					break;
@@ -63,7 +73,7 @@
 	}
 
 	/**
-	 * AJAX - Mise Ã  jour de la liste d'encaissement
+	 * AJAX - Mise à jour de la liste d'encaissement
 	 */
 	function updateList() {
 		var xmlHttp;
@@ -79,7 +89,7 @@
 	}
 
 	/**
-	* Supprime une camÃ©ra
+	* Supprime une caméra
 	* @param {Number} id
 	*/
 	function deleteCam(id) {
@@ -102,7 +112,7 @@
 	});
 
 	/**
-	* Affiche la pop up de moficiation de la camÃ©ra selectionÃ©e
+	* Affiche la pop up de moficiation de la caméra selectionée
 	* @param {Number} id
 	*/
 	function openUpdate() {
@@ -127,7 +137,7 @@
 				'width': Number(popWidth)
 			})
 
-			//RÃ©cupÃ©ration du margin, qui permettra de centrer la fenÃªtre - on ajuste de 80px en conformitÃ© avec le CSS
+			//Récupération du margin, qui permettra de centrer la fenêtre - on ajuste de 80px en conformité avec le CSS
 			var popMargTop = ($('#' + popID).height() + 80) / 2;
 			var popMargLeft = ($('#' + popID).width() + 80) / 2;
 
@@ -178,7 +188,7 @@
 	}
 
 	/**
-	* Met Ã  jour les information de la camÃ©ra dans la base de donnÃ©es
+	* Met à jour les information de la caméra dans la base de données
 	* @param {Number} id
 	* @param {String} nom
 	* @param {String} emplacement
@@ -201,7 +211,7 @@
 	}
 
 	/**
-	* Ajoute une nouvele camÃ©ra dans la base de donnÃ©es
+	* Ajoute une nouvele caméra dans la base de données
 	* @param {String} nom
 	* @param {String} emplacement
 	* @param {String} ip
@@ -223,7 +233,7 @@
 	}
 
 	/**
-	* Retourne Ã  la page visualisation.php
+	* Retourne à la page visualisation.php
 	*/
 	function returnBack() {
 		window.location = "visualisation.php";

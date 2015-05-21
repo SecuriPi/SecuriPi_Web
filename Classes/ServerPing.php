@@ -1,3 +1,13 @@
+/**
+ * \file          ServerPing.php
+ * \author    SécuriPi
+ * \version   1.0
+ * \brief       Permet de réaliser un ping sur un IP.
+ *
+ * \details    Cette classe permet de vérifier que la caméra est toujours 
+ *             en ligne en réalisant un ping sur son adresse.
+ */
+
 <?php
 /**
  * Executer un ping sur un IP ou un domaine
@@ -26,7 +36,6 @@ class ServerPing {
 		exec($cmd, $this->output);
 		/**
 		 * Extraire les temps de rÃ©ponse
-		 * @todo: utuliser les expressions rÃ©guliÃ¨res
 		 */
 		if (count($this->output)>2) {
 			$toparse=$this->output[count($this->output)-1];
@@ -45,16 +54,16 @@ class ServerPing {
 	}
 
 	/**
-	 * Afficher le dÃ©tail du ping
-	 * @return string rÃ©sultat du ping
+	 * Afficher le détail du ping
+	 * @return string résultat du ping
 	 */
 	public function getOutput() {
 		return implode("\\n", $this->output);
 	}
 
 	/**
-	 * Connaitre l'Ã©tat du serveur
-	 * @return boolean rÃ©ponse du serveur
+	 * Connaitre l'état du serveur
+	 * @return boolean réponse du serveur
 	 */
 	public function isAlive() {
 		if ($this->avg==0) {
@@ -64,20 +73,20 @@ class ServerPing {
 		}
 	}
 	/**
-	 * @return int temps min. de rÃ©ponse
+	 * @return int temps min. de réponse
 	 */
 	public function getMin() {
 		return $this->min;
 	}
 	/**
-	 * @return int temps max. de rÃ©ponse
+	 * @return int temps max. de réponse
 	 */
 	public function getMax() {
 		return $this->max;
 	}
 
 	/**
-	 * @return int temps moyen de rÃ©ponse
+	 * @return int temps moyen de réponse
 	 */
 	public function getAverage() {
 		return $this->avg;

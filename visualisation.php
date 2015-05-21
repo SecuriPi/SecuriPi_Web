@@ -1,6 +1,16 @@
 <!DOCTYPE HTML>
+<?php 
+/**
+ * \file          visualisation.php
+ * \author    SécuriPi
+ * \version   1.0
+ * \brief       Permet de visualiser les images transmises.
+ *
+ * \details    Ce fichier permet de visualiser les images transmises par les
+ *             cameras.
+ */
 
-<?php session_start();
+session_start();
 if(isset($_SESSION['ID']) and $_SESSION['IP'] == $_SERVER['REMOTE_ADDR'])
 { ?>
 <html>

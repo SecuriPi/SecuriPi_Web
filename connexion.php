@@ -1,7 +1,18 @@
 <!DOCTYPE HTML>
 
-<?php session_start();
-if(isset($_SESSION['ID']) and $_SESSION['IP'] == $_SERVER['REMOTE_ADDR'])
+<?php 
+/**
+ * \file          connexion.php
+ * \author    SécuriPi
+ * \version   1.0
+ * \brief       Permet de réaliser la connexion a la base de donnée.
+ *
+ * \details    Ce fichier permet de se connecter a la base dans le but de
+ *                  s'authentifier.
+ */
+
+session_start();
+if(isset($_SESSION['ID']) and $_SESSION['IP'] == $_SERVER['REMOTE_ADDR']) /** Vérifie l'identifiant et l'IP par rapport au serveur */
 {
 	header('location: visualisation.php');
 } else { ?>

@@ -1,3 +1,13 @@
+<?php/**
+ * \file          connexionUser.php
+ * \author    S&eacute;curiPi
+ * \version   1.0
+ * \brief       Authentification d'un utilisateur.
+ *
+ * \details    Ce fichier permet l'authentification d'un utilisateur aupr&egrave;s de
+ *             la base de donn&eacute;e.
+ */?>
+
 <?php
 if(isset($_SESSION['id']) == false and isset($_POST['identifiant']) and isset($_POST['password'])) {
 	session_start();
