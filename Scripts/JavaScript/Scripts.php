@@ -1,11 +1,10 @@
-<?php/**
+<?php
+
+/**
  * \file          Scripts.php
- * \author    S&eacute;curiPi
+ * \author    SécuriPi
  * \version   1.0
- * \brief       Script de d&eacute;connexion
- *
- * \details    Ce fichier permet de renvoyer vers le fichier de d&eacute;connexion
- *             au moment du click sur le bouton \e deconnexion.
+ * Script JS
  */
 ?>
 <script type="text/javascript">

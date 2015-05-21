@@ -1,14 +1,14 @@
+<?php
+
 /**
- * \file          ServerPing.php
+ * \file      ServerPing.php
  * \author    SécuriPi
  * \version   1.0
- * \brief       Permet de réaliser un ping sur un IP.
+ * \brief     Permet de réaliser un ping sur un IP.
  *
- * \details    Cette classe permet de vérifier que la caméra est toujours 
- *             en ligne en réalisant un ping sur son adresse.
+ * \details   Cette classe permet de vérifier que la caméra est toujours en ligne en réalisant un ping sur son adresse.
  */
 
-<?php
 /**
  * Executer un ping sur un IP ou un domaine
  */

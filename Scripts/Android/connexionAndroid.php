@@ -1,14 +1,14 @@
-<?php/**
- * \file          connexionAndroid.php
- * \author    S&eacute;curiPi
- * \version   1.0
- * \brief       Permet de r&eacute;aliser la connexion &agrave; la base de donn&eacute;e.
- *
- * \details    Ce fichier permet de se connecter &agrave; la base dans le but de
- *                  s'authentifier via l'application Android.
- */
-?>
 <?php
+
+/**
+ * \file      connexionAndroid.php
+ * \author    SécuriPi
+ * \version   1.0
+ * \brief     Permet de réaliser la connexion à la base de donnée.
+ *
+ * \details   Ce fichier permet de se connecter à la base dans le but de s'authentifier via l'application Android.
+ */
+
 include 'var_connexion.php';
 
 $bdd_connexion = new PDO('mysql:host='.$hostname.';dbname='.$database, $username, $password);

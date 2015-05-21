@@ -1,11 +1,11 @@
-<?php/**
- * \file          Head.php
+<?php
+/**
+ * \file      Head.php
  * \author    SécuriPi
  * \version   1.0
- * \brief       En-t&ecirc;te de page.
+ * \brief     En-tête de page.
  *
- * \details    Ce fichier permet contient les balises présentes en en-t&ecirc;te de 
- *             chaque page.
+ * \details   Ce fichier permet contient les balises présentes en en-tête de  chaque page.
  */
 ?>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />

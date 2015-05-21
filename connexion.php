@@ -2,13 +2,12 @@
 
 <?php 
 /**
- * \file          connexion.php
+ * \file      connexion.php
  * \author    SécuriPi
  * \version   1.0
- * \brief       Permet de réaliser la connexion a la base de donnée.
+ * \brief     Permet de réaliser la connexion a la base de donnée.
  *
- * \details    Ce fichier permet de se connecter a la base dans le but de
- *                  s'authentifier.
+ * \details   Ce fichier permet de se connecter a la base dans le but de s'authentifier.
  */
 
 session_start();
