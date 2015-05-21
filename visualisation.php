@@ -1,13 +1,12 @@
 <!DOCTYPE HTML>
 <?php 
 /**
- * \file          visualisation.php
+ * \file      visualisation.php
  * \author    SécuriPi
  * \version   1.0
- * \brief       Permet de visualiser les images transmises.
+ * \brief     Permet de visualiser les images transmises.
  *
- * \details    Ce fichier permet de visualiser les images transmises par les
- *             cameras.
+ * \details   Ce fichier permet de visualiser les images transmises par les cameras.
  */
 
 session_start();

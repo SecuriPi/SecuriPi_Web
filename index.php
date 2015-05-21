@@ -1,11 +1,10 @@
 <?php/**
- * \file          index.php
- * \author    S&eacute;curiPi
+ * \file      index.php
+ * \author    SécuriPi
  * \version   1.0
- * \brief       Index du site.
+ * \brief     Index du site.
  *
- * \details    Ce fichier permet la redirection vers la page connexion lors de
- *             l'acc&eacute;s au site.
+ * \details   Ce fichier permet la redirection vers la page connexion lors de l'accès au site.
  */?>
      
 <?php session_start();
