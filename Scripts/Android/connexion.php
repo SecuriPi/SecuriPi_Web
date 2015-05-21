@@ -1,5 +1,8 @@
 <?php
-include 'var_connexion.php';
+$hostname = "172.16.81.100";
+$database = "SecuriPi";
+$username = "root";
+$password = "securipi";
 
 $bdd_connexion = new PDO('mysql:host=172.16.81.100;dbname=SecuriPi', 'root', 'securipi');
 $clients = $bdd_connexion->query('SELECT * FROM Clients');

@@ -38,7 +38,10 @@ if(isset($_SESSION['ID']) and $_SESSION['IP'] == $_SERVER['REMOTE_ADDR'])
 			
 			<input type="radio" name="vide" id="vide" class="vide" checked="">
 			<label for="vide"><span><span></span></span></label>
-			<input type="radio" name="deconnexion" id="deconnexion" class="deconnexion">
+			<input type="radio" name="gestionCam" value="gestionCam" id="gestionCam">
+			<label for="gestionCam"><span><span>Mes caméras</span></span></label>
+			<input type="radio" name="gestionCompte" value="gestionCompte" id="gestionCompte">
+			<label for="gestionCompte"><span><span>Mon compte</span></span></label>
 			<input type="radio" name="deconnexion" value="deconnexion" id="deconnexion">
 			<label for="deconnexion"><span><span>Déconnexion</span></span></label>
 			
@@ -54,7 +57,7 @@ if(isset($_SESSION['ID']) and $_SESSION['IP'] == $_SERVER['REMOTE_ADDR'])
 			                $serverPing = new ServerPing();
 			                $serverPing->send($row[4], 1);
 			                if ($serverPing->isAlive()) { ?>
-			                	<img src="<?php echo "http://". $row[4] .":8081"; ?>" >
+			                	<img src="<?php echo "http://". $row[4]; ?>" >
 			                <?php } else { ?>
 			                	<h2 style="margin-top: 50px;">Caméra désactivée</h2>
 			                <?php } ?>

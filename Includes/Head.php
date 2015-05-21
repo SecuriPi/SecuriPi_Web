@@ -6,5 +6,9 @@
 <link rel="stylesheet" href="StyleSheet/Tabs.css">
 <link rel="stylesheet" href="StyleSheet/Connexion.css">
 <link rel="stylesheet" href="StyleSheet/Deconnexion.css">
+<link rel="stylesheet" href="StyleSheet/popup.css">
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 
 <title>SecuriPi</title>

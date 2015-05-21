@@ -30,7 +30,7 @@ if(isset($_SESSION['id']) == false and isset($_POST['identifiant']) and isset($_
 		}
 		
 		$date = date("Y-m-d");
-		$heure = date("H:i");
+		$heure = date("H:i:s");
 		
 		$bdd_connexion->exec("INSERT INTO Connexions VALUES(". $maxID_Client .", ". $_SESSION['ID'] .", '". $date ."', '". $heure ."', '". $_SESSION['IP'] ."');");
 		
