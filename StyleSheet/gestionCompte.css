@@ -1,0 +1,66 @@
+div h3 {
+	margin: 0 0;
+}
+
+label {
+	width: 165px;
+	display: inline-block;
+	text-align: left;
+}
+
+#editAccountForm {
+	margin-top: 40px;
+	width: 37%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#editAccount {
+	margin-top: 40px;
+	text-align: center;
+}
+#editAccount form input {
+	margin: 5px 0px 5px 0px;
+	font-family: CenturyGothic;
+	height: 25px;
+	width: 200px;
+	font-size: 17px;
+	border: 2px solid #888888;
+	outline: 0;
+}
+#editAccount form input[type="button"] {
+	width: 230px;
+	height: 29px;
+	background-color: #333333;
+	color: white;
+	text-align: center;
+	margin: 30px 0 10px 0;
+	cursor: pointer;
+}
+
+#editAccount form input[type="password"] {
+	margin: 5px 0px 5px 0px;
+	font-family: CenturyGothic;
+	height: 25px;
+	width: 200px;
+	font-size: 17px;
+	border: 2px solid #888888;
+	outline: 0;
+	padding: 0;
+	border-radius: 0;
+}
+
+#editAccount #message {
+	font-size: 17px;
+	height: 20px;
+	line-height: 20px;
+	color: #333333;
+	text-align: center;
+	background-color: rgba(255,255,255,1);
+	border-radius: 5px;
+	padding: 5px;
+	width: 97.2%;
+	margin: 0 0 10px 0;
+	font-weight: bold;
+	display: none;
+}

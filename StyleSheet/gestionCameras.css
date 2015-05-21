@@ -1,0 +1,76 @@
+div h3 {
+	margin: 0 0;
+}
+#gestionCam {
+	margin-top: 40px;
+	text-align: center;
+}
+#listing {
+	margin-top: 40px;
+	width: 100%;
+}
+#addCamButton {
+	padding: 3px 46px;
+}
+#addCamButton, input {
+	margin: 5px 0px 5px 0px;
+	font-family: CenturyGothic;
+	height: 25px;
+	width: 200px;
+	font-size: 17px;
+	border: 2px solid #888888;
+	outline: 0;
+}
+#addCamButton, input[type="button"] {
+	width: 230px;
+	height: 29px;
+	background-color: #333333;
+	color: white;
+	text-align: center;
+	margin: 30px 0 10px 0;
+	cursor: pointer;
+}
+#listing table {
+	background-color: #222222;
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+	border: 2px solid #000000;
+	color: #FFFFFF;
+}
+th, td {
+	text-align: center;
+	border-collapse: collapse;
+}
+tr {
+	height: 50px;
+}
+td img {
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.dix {
+	width: 10%;
+}
+.vingt {
+	width: 20%;
+}
+.quarante {
+	width: 40%;
+}
+.align-left {
+	text-align: left;
+	padding-left: 10px;
+}
+
+.no-style {
+	border: none;
+	color: #FFFFFF;
+	background-color: #222222;
+}
+.no-style:focus {
+	border: 2px solid #000000;
+	color: #000000;
+	background-color: #FFFFFF;
+}
