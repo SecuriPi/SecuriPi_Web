@@ -1,2 +1,4 @@
 Scripts/connexionBDD.php
 Scripts/Android/var_connexion.php
+
+*.db
