@@ -1,7 +1,7 @@
 <?php
 
 /**
- * \file          Scripts.php
+ * \file      Scripts.php
  * \author    SécuriPi
  * \version   1.0
  * Script JS
@@ -156,7 +156,7 @@
 	}
 
 	/**
-	* AJAX - Modification du contenu de la pop-up selon l'id de la vente
+	* AJAX - Modification du contenu de la pop-up selon l'id de la caméra
 	* @param {Number} id
 	*/
 	function setPopUpContent(id) {
