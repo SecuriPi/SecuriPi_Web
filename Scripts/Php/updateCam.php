@@ -10,6 +10,7 @@ $port = $_GET['port'];
 if($port == NULL) {
 	$sql = "UPDATE Cameras SET Nom = '$nom', Emplacement = '$emplacement', IP = '$ip', Port = NULL WHERE ID = $id;";
 } else {
+	$sql = "UPDATE Cameras SET Nom = '$nom', Emplacement = '$emplacement', IP = '$ip', Port = $port WHERE ID = $id;";
 }
 
 $exec = $bdd_connexion->exec($sql);
