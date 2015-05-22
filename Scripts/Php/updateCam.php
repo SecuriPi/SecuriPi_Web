@@ -18,7 +18,7 @@ if($port == NULL) {
 	if($complement == NULL) {
 		$sql = "UPDATE Cameras SET Nom = '$nom', Emplacement = '$emplacement', IP = '$ip', Complement = NULL, Port = $port WHERE ID = $id;";
 	} else {
-		$sql = "UPDATE Cameras SET Nom = '$nom', Emplacement = '$emplacement', IP = '$ip', Complement = $complement, Port = $port WHERE ID = $id;";
+		$sql = "UPDATE Cameras SET Nom = '$nom', Emplacement = '$emplacement', IP = '$ip', Complement = '$complement', Port = $port WHERE ID = $id;";
 	}
 }
 

@@ -50,14 +50,17 @@ td img {
 	cursor: pointer;
 }
 
+.cinq {
+	width: 5%;
+}
 .dix {
 	width: 10%;
 }
-.vingt {
-	width: 20%;
+.quinze {
+	width: 15%;
 }
 .trente {
-	width: 3s0%;
+	width: 30%;
 }
 .align-left {
 	text-align: left;

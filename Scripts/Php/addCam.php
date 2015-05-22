@@ -4,7 +4,7 @@ include '../connexionBDD.php';
 
 $id_client = $_SESSION['ID'];
 
-$sql_get_max_ID_cam = "SELECT MAX(ID) FROM Cameras WHERE ID_Client = $id_client; AND ID >= 1";
+$sql_get_max_ID_cam = "SELECT MAX(ID) FROM Cameras WHERE ID_Client = $id_client AND ID >= 1;";
 $get_max_ID_cam = $bdd_connexion->query($sql_get_max_ID_cam);
 $max_ID_cam = $get_max_ID_cam->fetch();
 $max_ID_cam = $max_ID_cam[0] + 1;

@@ -9,6 +9,6 @@ if($id != '') {
 
 	$sql_reindent = "UPDATE Cameras SET ID = ID - 1 WHERE ID > $id;";
 	$exec_reindent = $bdd_connexion->exec($sql_reindent);
-	if($exec AND $exec_reindent) { echo 'suppr:done'; }
+	if($exec) { echo 'suppr:done'; }
 }
 ?>
