@@ -192,7 +192,7 @@
 	* @param {String} emplacement
 	* @param {String} ip
 	*/
-	function updateCam(id, nom, emplacement, ip, port) {
+	function updateCam(id, nom, emplacement, ip, complement, port) {
 		var xmlHttp;
 		xmlHttp = new XMLHttpRequest();
 		xmlHttp.onreadystatechange = function() {
@@ -204,7 +204,7 @@
 			}
 		}
 
-		xmlHttp.open("GET","Scripts/Php/updateCam.php?id="+id+"&nom="+nom+"&emplacement="+emplacement+"&ip="+ip+"&port="+port, true);
+		xmlHttp.open("GET","Scripts/Php/updateCam.php?id="+id+"&nom="+nom+"&emplacement="+emplacement+"&ip="+ip+"&complement="+complement+"&port="+port, true);
 		xmlHttp.send();
 	}
 
@@ -214,7 +214,7 @@
 	* @param {String} emplacement
 	* @param {String} ip
 	*/
-	function addCam(nom, emplacement, ip, port) {
+	function addCam(nom, emplacement, ip, complement, port) {
 		var xmlHttp;
 		xmlHttp = new XMLHttpRequest();
 		xmlHttp.onreadystatechange = function() {
@@ -226,7 +226,7 @@
 			}
 		}
 
-		xmlHttp.open("GET","Scripts/Php/addCam.php?nom="+nom+"&emplacement="+emplacement+"&ip="+ip+"&port="+port, true);
+		xmlHttp.open("GET","Scripts/Php/addCam.php?nom="+nom+"&emplacement="+emplacement+"&ip="+ip+"&complement="+complement+"&port="+port, true);
 		xmlHttp.send();
 	}
 
