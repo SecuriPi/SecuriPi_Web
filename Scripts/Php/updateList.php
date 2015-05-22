@@ -11,7 +11,7 @@ while($cameras = $get_cameras->fetch()) {
 		<td>'.utf8_encode($cameras['Nom']).'</td>
 		<td class="align-left">'.utf8_encode($cameras['Emplacement']).'</td>
 		<td>'.$cameras['IP'].'</td>
-		<td>'.$cameras['complement'].'</td>
+		<td>'.$cameras['Complement'].'</td>
 		<td>'.$cameras['Port'].'</td>
 		<td><a href="#?w=900&id='.$cameras['ID'].'" rel="updateCam" class="popLink"><img src="System/Images/modify_icon.png" onclick="openUpdate();"></a><img src="System/Images/delete_icon.png" onclick="deleteCam('.$cameras['ID'].');"></td>
 		</tr>';
