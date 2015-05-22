@@ -65,8 +65,11 @@ if(isset($_SESSION['ID']) and $_SESSION['IP'] == $_SERVER['REMOTE_ADDR'])
 			                <?php require_once './Classes/ServerPing.php';
 			                $serverPing = new ServerPing();
 			                $serverPing->send($row[4], 1);
-			                if ($serverPing->isAlive()) { ?>
-			                	<img src="<?php echo "http://". $row[4] .":". $row[5]; ?>">
+			                if ($serverPing->isAlive()) {
+			                	if($row[5] != '') { ?>
+			                		<img src="<?php echo "http://". $row[4] .":". $row[5]; ?>">
+			                	<?php } else { ?>
+			                		<img src="<?php echo "http://". $row[4]; ?>">
 			                <?php } else { ?>
 			                	<h2 style="margin-top: 50px;">Caméra désactivée</h2>
 			                <?php } ?>
