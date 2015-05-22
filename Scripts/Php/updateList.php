@@ -2,7 +2,10 @@
 
 include '../connexionBDD.php';
 
-$sql_get_cameras = "SELECT * FROM Cameras;";
+session_start();
+$ID_Client = $_SESSION['ID'];
+
+$sql_get_cameras = "SELECT * FROM Cameras WHERE ID_Client = $ID_Client;";
 $get_cameras = $bdd_connexion->query($sql_get_cameras);
 
 $str_out = '';
