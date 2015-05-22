@@ -16,7 +16,7 @@ while($cameras = $get_cameras->fetch()) {
 		</tr>';
 }
 if($str_out == '') {
-	$str_out .= '<tr><td colspan="4">Aucune caméras trouvée</td></tr>';
+	$str_out .= '<tr><td colspan="5">Aucune caméras trouvée</td></tr>';
 }
 
 echo $str_out;
