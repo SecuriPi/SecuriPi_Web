@@ -9,7 +9,7 @@ if($id == 'new') {
 	<form>
 	<input type="text" name="nom" placeholder="Nom"><br>
 	<input type="text" name="emplacement" placeholder="Emplacement"><br>
-	<input type="text" name="ip" placeholder="IP"><br><br>
+	<input type="text" name="ip" placeholder="IP"><br>
 	<input type="text" name="port" placeholder="Port"><br><br>
 	<input type="button" onclick="addCam(nom.value, emplacement.value, ip.value, port.value);" value="Ajouter">
 	</form>';
@@ -25,7 +25,7 @@ if($id == 'new') {
 	<input type="hidden" name="id_cam" value="'.$id.'">
 	<input type="text" name="nom" value="'.utf8_encode($cameras['Nom']).'"><br>
 	<input type="text" name="emplacement" value="'.utf8_encode($cameras['Emplacement']).'"><br>
-	<input type="text" name="ip" value="'.$cameras['IP'].'"><br><br>
+	<input type="text" name="ip" value="'.$cameras['IP'].'"><br>
 	<input type="text" name="port" value="'.$cameras['Port'].'"><br><br>
 	<input type="button" onclick="updateCam(id_cam.value, nom.value, emplacement.value, ip.value, port.value);" value="Enregistrer">
 	</form>';
