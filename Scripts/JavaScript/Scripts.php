@@ -183,7 +183,6 @@
 		$('#fade , .popUpBlock').fadeOut(function() {
 			$('#fade, a.close').remove();
 		});
-		return false;
 	}
 
 	/**
