@@ -214,7 +214,7 @@
 	* @param {String} emplacement
 	* @param {String} ip
 	*/
-	function addCam(nom, emplacement, ip) {
+	function addCam(nom, emplacement, ip, port) {
 		var xmlHttp;
 		xmlHttp = new XMLHttpRequest();
 		xmlHttp.onreadystatechange = function() {
