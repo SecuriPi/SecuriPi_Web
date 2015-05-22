@@ -66,7 +66,7 @@ if(isset($_SESSION['ID']) and $_SESSION['IP'] == $_SERVER['REMOTE_ADDR'])
 			                $serverPing = new ServerPing();
 			                $serverPing->send($row[4], 1);
 			                if ($serverPing->isAlive()) {
-			                	if($row[5] != '') { ?>
+			                	if($row[5] != NULL) { ?>
 			                		<img src="<?php echo "http://". $row[4] .":". $row[5]; ?>">
 			                	<?php } else { ?>
 			                		<img src="<?php echo "http://". $row[4]; ?>">
