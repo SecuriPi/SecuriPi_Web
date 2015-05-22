@@ -28,8 +28,9 @@ if(isset($_SESSION['ID']) and $_SESSION['IP'] == $_SERVER['REMOTE_ADDR']) { ?>
                     <thead>
                         <tr>
                             <th class="vingt">Nom</th>
-                            <th class="quarante align-left">Emplacement</th>
+                            <th class="trente align-left">Emplacement</th>
                             <th class="vingt">IP</th>
+                            <th class="dix">Port</th>
                             <th class="vingt">Gestion</th>
                         </tr>
                     </thead>
