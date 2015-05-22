@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `Cameras` (
 	`Nom` varchar(50) NOT NULL,
 	`Emplacement` varchar(50) NOT NULL,
 	`IP` varchar(20) NOT NULL,
-	`Port` int(7) NOT NULL
+	`Port` int(7) DEFAULT = ''
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
