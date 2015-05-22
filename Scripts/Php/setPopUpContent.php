@@ -1,6 +1,9 @@
 <?php
 
+session_start();
+$ID_Client = $_SESSION['ID'];
 $id = $_GET['id'];
+
 
 $str_out = '<a href="javascript:closePopUp();" class="close"><img src="System/Images/popup_close_icon.png" class="buttonClose" title="Fermer" alt="Fermer"/></a>';
 
@@ -17,7 +20,7 @@ if($id == 'new') {
 } else {
 	include '../connexionBDD.php';
 
-	$sql_get_cameras = "SELECT * FROM Cameras WHERE ID = $id;";
+	$sql_get_cameras = "SELECT * FROM Cameras WHERE ID = $id AND ID_Client = $ID_Client;";
 	$get_cameras = $bdd_connexion->query($sql_get_cameras);
 	$cameras = $get_cameras->fetch(PDO::FETCH_ASSOC);
 
