@@ -13,7 +13,7 @@ if($port == NULL) {
 	if($complement == NULL) {
 		$sql = "INSERT INTO Cameras(ID_Client, Nom, Emplacement, IP) VALUES($id_client, '$nom', '$emplacement', '$ip');";
 	} else {
-		$sql = "INSERT INTO Cameras(ID_Client, Nom, Emplacement, IP, Complement, Port) VALUES($id_client, '$nom', '$emplacement', '$ip', '$complement', $port);";
+		$sql = "INSERT INTO Cameras(ID_Client, Nom, Emplacement, IP, Complement) VALUES($id_client, '$nom', '$emplacement', '$ip', '$complement');";
 	}
 } else {
 	if($complement == NULL) {
