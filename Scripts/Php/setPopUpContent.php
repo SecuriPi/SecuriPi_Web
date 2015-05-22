@@ -27,7 +27,7 @@ if($id == 'new') {
 	<input type="text" name="nom" value="'.utf8_encode($cameras['Nom']).'"><br>
 	<input type="text" name="emplacement" value="'.utf8_encode($cameras['Emplacement']).'"><br>
 	<input type="text" name="ip" value="'.$cameras['IP'].'"><br>
-	<input type="text" name="complement" placeholder="Complément d\'adresse"><br>
+	<input type="text" name="complement" placeholder="Complément d\'adresse" value="'.$cameras['Complement'].'"><br>
 	<input type="text" name="port" value="'.$cameras['Port'].'"><br><br>
 	<input type="button" onclick="updateCam(id_cam.value, nom.value, emplacement.value, ip.value, complement.value, port.value);" value="Enregistrer">
 	</form>';
