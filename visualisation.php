@@ -70,7 +70,8 @@ if(isset($_SESSION['ID']) and $_SESSION['IP'] == $_SERVER['REMOTE_ADDR'])
 			                		<img src="<?php echo "http://". $row[4] .":". $row[5]; ?>">
 			                	<?php } else { ?>
 			                		<img src="<?php echo "http://". $row[4]; ?>">
-			                <?php } else { ?>
+			                <?php }
+			                } else { ?>
 			                	<h2 style="margin-top: 50px;">Caméra désactivée</h2>
 			                <?php } ?>
 		                </div>
