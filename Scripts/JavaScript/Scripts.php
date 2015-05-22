@@ -48,16 +48,16 @@
 			if(xmlHttp.readyState == 4) {
 				switch (xmlHttp.responseText) {
 					case 'login:empty':
-					addMessage("L' 'Identifiant' ne peux pas être vide !");
+					addMessage(unescape(encodeURIComponent("L' 'Identifiant' ne peux pas être vide !")));
 					break;
 					case 'mdp:empty':
-					addMessage("Le 'Mot de passe' ne peux pas être vide !");
+					addMessage(unescape(encodeURIComponent("Le 'Mot de passe' ne peux pas être vide !")));
 					break;
 					case 'err:confirm':
-					addMessage("Les mots de passes sont différents !");
+					addMessage(unescape(encodeURIComponent("Les mots de passes sont différents !")));
 					break;
 					default:
-					document.getElementById("message").innerHTML = "Le compte à été modifié !";
+					document.getElementById("message").innerHTML = unescape(encodeURIComponent("Le compte à été modifié !"));
 					document.getElementById("message").style.display = "block";
 					setTimeout(function(){ returnBack(); }, 2500);
 					break;
