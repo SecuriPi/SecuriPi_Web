@@ -72,7 +72,7 @@
 	}
 
 	/**
-	 * AJAX - Mise à jour de la liste d'encaissement
+	 * AJAX - Mise à jour de la liste des caméras
 	 */
 	function updateList() {
 		var xmlHttp;
