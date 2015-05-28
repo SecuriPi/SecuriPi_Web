@@ -22,7 +22,7 @@ if(isset($_SESSION['ID']) and $_SESSION['IP'] == $_SERVER['REMOTE_ADDR']) { ?>
 		<?php } ?>
 
 		<div id="gestionCam">
-			<h3>Modifier mes caméras</h3>
+			<h3>Modifier mon compte</h3>
             <div id="listing">
                 <table>
                     <thead>
