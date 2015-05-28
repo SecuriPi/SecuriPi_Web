@@ -18,7 +18,7 @@ if(isset($_SESSION['id']) == false and isset($_POST['identifiant']) and isset($_
 	$clients = $bdd_connexion->query('SELECT * FROM Clients');
 	
 	while ($row = $clients->fetch()) {
-		if($_POST['identifiant'] == $row[3] and md5($_POST['password']) == $row[4]){
+		if(strtolower($_POST['identifiant']) == strtolower($row[3]) and md5($_POST['password']) == $row[4]){
 			$_SESSION['IP'] = $_SERVER['REMOTE_ADDR'];
 			$_SESSION['ID'] = $row[0];
 			$_SESSION['Nom'] = $row[1];
